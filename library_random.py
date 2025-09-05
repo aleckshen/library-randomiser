@@ -1,3 +1,6 @@
+import random
+import argparse
+
 libraries = ["Albany Village Library", "Avondale Library", "Birkenhead Library",
              "Blockhouse Bay Library", "Botany Library", "Central City Library",
              "Devonport Library", "East Coast Bays Library", "Epsom Library",
@@ -23,4 +26,5 @@ libraries = ["Albany Village Library", "Avondale Library", "Birkenhead Library",
              "Warkworth War Memorial Library", "Wellsford War Memorial Library",
              "Whangaparāoa Library"]
 
-print(len(libraries))
+random_library = random.choice(libraries)
+print("Selected library:", random_library)
