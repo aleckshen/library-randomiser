@@ -26,5 +26,36 @@ libraries = ["Albany Village Library", "Avondale Library", "Birkenhead Library",
              "Warkworth War Memorial Library", "Wellsford War Memorial Library",
              "Whangaparāoa Library"]
 
-random_library = random.choice(libraries)
-print("Selected library:", random_library)
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Randomly pick Auckland libraries."
+    )
+
+    parser.add_argument(
+        "-n", "--number",
+        type=int,
+        default=1,
+        help="How many libraries to pick (default: 1)."
+    )
+
+    parser.add_argument(
+        "-a", "--all",
+        action="store_true",
+        help="Show all libraries instead of picking randomly."
+    )
+
+    args = parser.parse_args()
+
+    if args.all:
+        print("All available libraries:")
+        for lib in libraries:
+            print(" -", lib)
+    else:
+        selected = random.sample(libraries, k=min(args.number, len(libraries)))
+        print("Selected library/libraries:")
+        for lib in selected:
+            print(" -", lib)
+
+if __name__ == "__main__":
+    main()
