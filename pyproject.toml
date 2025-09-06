@@ -7,7 +7,7 @@ name = "pylib"
 version = "0.1.0"
 description = "A CLI tool to randomly pick Auckland libraries"
 authors = [
-  { name="Aleck Shenb", email="you@example.com" }
+  { name="Your Name", email="you@example.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.7"
