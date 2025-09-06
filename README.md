@@ -17,5 +17,5 @@ Useful for exploring different locations or simply deciding where to go next.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/library-random.git
+git clone https://github.com/your-username/library-randomiser.git
 cd library-randomiser
