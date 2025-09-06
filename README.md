@@ -37,3 +37,32 @@ Add that line to your `~/.zshrc` or `~/.bashrc` to make it permanent.
 - Show all libraries: `pylib -a or pylib --all`  
 - Pick 3 random libraries: `pylib -n 3 or pylib --number 3`  
 - Pick the default (1) random library: `pylib`
+
+---
+
+## Uninstallation
+
+To remove `pylib` completely:  
+`pip uninstall pylib`
+
+- Confirm when prompted. This removes the CLI command and package files.
+
+---
+
+## Developer Installation (Optional)
+
+If you want to **edit the code** and test changes without reinstalling:
+
+1. Clone the repository and navigate into it:  
+`git clone https://github.com/yourusername/pylib.git`  
+`cd pylib`
+
+2. Create and activate a virtual environment:  
+`python -m venv .venv`  
+`source .venv/bin/activate`
+
+3. Install in editable mode:  
+`pip install -e .`
+
+- Changes to `cli.py` will be reflected immediately.  
+- Run the CLI with: `pylib -a` or `python -m pylib.cli -a`
