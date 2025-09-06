@@ -1,21 +1,23 @@
-# Auckland Library Randomizer CLI
+# pylib
 
-A command-line tool that randomly selects libraries from the Auckland Libraries network.  
-Useful for exploring different locations or simply deciding where to go next.
+A simple CLI tool to randomly pick Auckland libraries.
 
 ---
 
 ## Features
-- Randomly select one or more libraries.
-- Display the full list of Auckland libraries.
-- Simple, lightweight, and dependency-free.
+
+- Pick 1 or more random libraries from Auckland.
+- Display all available libraries.
+- Easy-to-use command-line interface.
 
 ---
 
-## Installation
+## Installation (Global)
 
-Clone the repository:
+You can install `pylib` globally so the `pylib` command works anywhere.
+
+1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/pylib.git
+git clone https://github.com/yourusername/pylib.git
 cd pylib
