@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylib"
+version = "0.1.0"
+description = "A CLI tool to randomly pick Auckland libraries"
+authors = [
+  { name="Aleck Shenb", email="you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.scripts]
+pylib = "pylib.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
